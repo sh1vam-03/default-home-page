@@ -1,0 +1,254 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        overflow: auto; /* Allow scrolling if necessary */
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        margin: 10px auto;
+        position: relative; /* Ensure it's above other content */
+        z-index: 2; /* Position above cards */
+    }
+
+    input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: 2px solid #333;
+        border-radius: 25px;
+        background-color: #1e1e1e;
+        color: #fff;
+        font-size: 16px;
+        outline: none;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .name {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .name img {
+        height: 60px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+        max-width: 1200px; /* Increased max-width for better responsiveness */
+        margin: 0 auto; /* Center the container */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+
+    .card {
+        width: 150px;
+        height: 300px;
+        perspective: 1000px;
+        transition: transform 0.6s ease, z-index 0.6s ease;
+        box-sizing: border-box; /* Ensure box-sizing is applied */
+    }
+
+    .card-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s, transform-origin 0.6s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card:hover .card-content {
+        transform: rotateY(540deg) scale(1.2); /* Adjusted scale for better fit */
+    }
+
+    .card:hover {
+        transform: scale(1.2); /* Adjusted scale for better fit */
+        z-index: 10;
+    }
+
+    .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px #d4d1d185;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        flex-direction: column;
+    }
+
+    .card-front {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .card-back {
+        background-color: rgba(27, 27, 27, 0.425);
+        transform: rotateY(180deg);
+    }
+
+    .card img {
+        width: 50px; /* Slightly larger icons for better visibility */
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgba(122, 117, 117, 0.637);
+        transition: background-color 0.3s ease;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .card a:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+   /* Individual Card Backgrounds */
+
+        /* 1st Card */
+        .card-instagram .card-front {
+            background-image: url('./images/1-Hinata.jpg'); 
+        }
+
+        /* 2nd Card */
+        .card-whatsapp .card-front {
+            background-image: url('./images/2-Naruto&Hinata.jpg'); 
+        }
+        
+        /* 3rd Card */
+        .card-linkedin .card-front {
+            background-image: url('./images/3-Naruto.jpg');
+        }
+        
+        /* 4th Card */
+        .card-gmail .card-front {
+            background-image: url('./images/4-Kakashi.jpg'); 
+        }
+        
+        /* 5th Card */
+        .card-github .card-front {
+            background-image: url('./images/5-Naruto.jpg'); 
+        }
+        
+        /* 6th Card */
+        .card-chatGPT .card-front {
+            background-image: url('./images/6-Jiraya.jpg'); 
+        }
+        
+        /* 7th Card */
+        .card-telegram .card-front {
+            background-image: url('./images/7-Naruto&Hinata.jpg'); 
+        }
+
+        /* 8th Card */
+        .card-tryhackme .card-front {
+            background-image: url('./images/8-Sasuke.jpg'); 
+        }
+
+
+        
+        /* Responsive adjustments */
+    @media (max-width: 600px) {
+        .card-container {
+            padding: 10px;
+        }
+
+        .card {
+            width: 120px; /* Reduced width for smaller screens */
+            height: 240px; /* Reduced height for smaller screens */
+        }
+
+        .card img {
+            width: 40px; /* Smaller icons for smaller screens */
+            height: 40px;
+        }
+
+        .name {
+            font-size: 20px; /* Smaller font size for smaller screens */
+        }
+
+        input[type="text"], input[type="submit"] {
+            font-size: 14px; /* Smaller font size for form elements */
+        }
+
+    }
+
+
+/* Developer info button */
+
+    .info-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        font-size: 0.9em;
+    }
+    .info-button:hover {
+        background-color: #555;
+        color: #00aced;
+    }
+    .info-popup {
+        display: none;
+        position: fixed;
+        bottom: 60px;
+        right: 41px;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        max-width: 200px;
+        z-index: 1000;
+        text-align: center; /* Center-aligns text inside the popup */
+    }
+    .info-popup a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 2px 0px; /* Adds vertical space between links */
+        font-size: 0.9em;/* Adjust size of icons */
+    }
+    .info-popup a:hover {
+        color: #00aced;
+    }
