@@ -1,4 +1,4 @@
-﻿# default-home-page 
+﻿# Default-home-page Setup Guide
 ## Windows & Linux
 
 ### 1. For Google Chrome
