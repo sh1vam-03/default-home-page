@@ -21,7 +21,7 @@
    - Enter the following URL:
      - URL:
 ```sh
-    #
+https://sh1vam-03.github.io/default-home-page/
 ```
    - Click `Add` to save.
 
@@ -52,7 +52,7 @@ When you restart Chrome, it will open with the page you have set.
    - Enter the following URL in the text box:
      - URL:
 ```sh
-    #
+https://sh1vam-03.github.io/default-home-page/
 ```
    - Click `Save` or `OK`.
 
@@ -90,7 +90,7 @@ If you are using a different browser, you will need to find the startup page set
    - Enter the following URL in the provided field:
      - URL:
 ```sh
-    #
+https://sh1vam-03.github.io/default-home-page/
 ```
    - Tap `Save` or `OK` to apply the changes.
 
@@ -115,7 +115,7 @@ When you tap the home button, it will now open the page you have set.
    - Enter the following URL in the text box:
      - URL:
 ```sh
-    #
+https://sh1vam-03.github.io/default-home-page/
 ```
    - Tap `Save` or `OK` to apply the changes.
 
@@ -126,6 +126,6 @@ When you open Firefox, it will now display the page you have set as the homepage
 ### 3. For Other Browsers
 If you are using a different browser on Android, the option to set a startup or homepage may vary. Generally, you can find it in the browser’s settings under "Homepage" or "Startup" settings. Enter the following URL to set the default page.
 ```sh
-    #
+https://sh1vam-03.github.io/default-home-page/
 ```
 
