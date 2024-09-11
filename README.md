@@ -129,3 +129,12 @@ If you are using a different browser on Android, the option to set a startup or 
 https://sh1vam-03.github.io/default-home-page/
 ```
 
+## Contributing
+
+We welcome contributions! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
